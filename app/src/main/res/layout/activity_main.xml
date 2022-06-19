@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    tools:context=".MainActivity">
+
+    <com.example.paint.SimplePaint
+        android:id="@+id/simplePaint"
+        android:layout_width="413dp"
+        android:layout_height="733dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/colorPicker"
+        android:layout_width="44dp"
+        android:layout_height="40dp"
+        android:background="#040404"
+        app:layout_constraintBottom_toBottomOf="@+id/clear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.889"
+        app:layout_constraintStart_toEndOf="@+id/clear"
+        app:layout_constraintTop_toTopOf="@+id/clear"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="102dp" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="33dp"
+        android:layout_height="41dp"
+        app:layout_constraintBottom_toBottomOf="@+id/clear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toEndOf="@+id/clear"
+        app:layout_constraintTop_toTopOf="@+id/clear"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+
+    <ImageView
+        android:id="@+id/clear"
+        android:layout_width="44dp"
+        android:layout_height="39dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+    <ImageView
+        android:id="@+id/square"
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        app:layout_constraintBottom_toBottomOf="@+id/clear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toEndOf="@+id/clear"
+        app:layout_constraintTop_toTopOf="@+id/clear"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="?android:attr/listChoiceIndicatorMultiple" />
+
+    <ImageView
+        android:id="@+id/circle"
+        android:layout_width="39dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/clear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.618"
+        app:layout_constraintStart_toEndOf="@+id/clear"
+        app:layout_constraintTop_toTopOf="@+id/clear"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="?android:attr/listChoiceIndicatorSingle" />
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="39dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="16dp"
+        android:rotation="0"
+        app:layout_constraintBottom_toBottomOf="@+id/clear"
+        app:layout_constraintEnd_toStartOf="@+id/circle"
+        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintStart_toEndOf="@+id/clear"
+        app:layout_constraintTop_toTopOf="@+id/clear"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="?android:attr/fastScrollThumbDrawable" />
+</androidx.constraintlayout.widget.ConstraintLayout>
